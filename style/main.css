@@ -27,7 +27,7 @@ footer{
     width: 100%;
 }
 
-.main-element{
+.main-element{ 
     margin-bottom: 2em;
 }
 
@@ -95,6 +95,21 @@ img {
     max-width: 100%;
 }
 
+.menuicon {
+   margin-top: auto;
+   width: 5%   
+}
+header{
+    display: flex;
+    height: 10vh;
+    justify-content: space-between
+}
+
+.header-element {
+    display: flex;
+    justify-content: flex-start;
+}
+    
 /*====================
 ========Logo=========
 ======================*/
@@ -103,26 +118,23 @@ img {
     width: max-content;
 }
 
-.logo svg{
+.logo__image svg{
     height: 3em;
     width: 3em;
 }
 
-.logo svg path{
+.logo__image svg path{
     fill:hsl(19, 100%, 50%);
 }
 
-/*====================
-========Title=========
-======================*/
-
-.title{
+.logo__title{
     margin-left: 1em;
 }
 
-.title h1{
+.logo__title h1{
     text-align: left;
 }
+
 
 /*====================
 ========Subtitle======
@@ -138,9 +150,25 @@ img {
     text-align: center;
 }
 
+
 /*====================
 =========CRUD=========
 ======================*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
 
 .crud{
     display: flex;
@@ -151,31 +179,6 @@ img {
 .crud__table, .crud__form{
     min-width: 45%;
     max-width: 45%;
-}
-
-.crud__table-grid, .crud__table-flex{
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-.crud__table-grid{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: 0.5em;
-}
-
-.crud__table-grid-element{
-    width: 100%;
-}
-
-.crud__table-flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-}
-
-.crud__table-flex-element{
-    flex-basis: 25%;
 }
 
 .crud__form{
@@ -211,7 +214,7 @@ img {
 .crud__form-input input, 
 .crud__form-input textarea,
 .crud__form-input select {
-    background-color: hsl(0, 0%, 100%);
+    background-color: rgb(255, 255, 255);
 	border: none;
 	border-bottom: 1px solid hsl(0, 0%, 73%);
 	box-sizing: border-box;
@@ -262,6 +265,10 @@ img {
 
 .footer-element p{
     text-align: center;
+}
+
+.footer-element p:hover{
+    color: rgb(165, 96, 255)
 }
 
 @media (max-width:479px) {
