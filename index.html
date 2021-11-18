@@ -92,62 +92,68 @@
                         </tr>
                     </table>
                 </div>               
-                <div class="formulario">
+                <div class="crud__form">
                     <!--empieza 4 columnas-->
-                    <div class="four-columns">
-                        <div class="name">
-                            <div class="name-tittle">
+                    <div class="crud__form-four-columns">
+                        <div class="crud__form-element">
+                            <div class="crud__form-label">
                                 <label for="name">Nombre:</label>
                             </div>
-                            <div class="name-text">
+                            <div class="crud__form-input">
                                 <input type="text" name="name">
                             </div>
                         </div>
-                        <div class="email">
-                            <div class="email-tittle">
+                        <div class="crud__form-element">
+                            <div class="crud__form-label">
                                 <label for="email">Correo electrónico:</label>
                             </div>
-                            <div class="email-text">
+                            <div class="crud__form-input">
                                 <input type="email" name="email">
                             </div>                             
                         </div>
-                        <div class="password">
-                            <div class="password-tittle">
+                        <div class="crud__form-element">
+                            <div class="crud__form-label">
                                 <label for="pwd">Contraseña:</label>
                             </div>
-                            <div class="password-text">
+                            <div class="crud__form-input">
                                 <input type="password" name="password">
                             </div>
                         </div>
-                        <div class="number">
-                            <div class="number-tittle">
+                        <div class="crud__form-element">
+                            <div class="crud__form-label">
                                 <label for="precio">Precio:</label>
                             </div>
-                            <div class="number-text">
+                            <div class="crud__form-input">
                                 <input type="number" name="numero" min="10" max="250">
                             </div>                            
                         </div>
                     </div>
                     <!--acaba 4 columnas-->
                     <!--empieza 3 columnas-->
-                    <div class="three-columns">
-                        <div class="input-archivo">                       
-                            <div class="input-archivo-text">
-                                <label for="archivo">Sube tu propuesta de cartel:</label>
-                                <input type="file" name="archivo">                        
+                    <div class="crud__form-three-columns">
+                        <div class="crud__form-element">                       
+                            <div class="crud__form-label">
+                                <label for="archivo">Sube tu propuesta de cartel:</label>                                                     
+                            </div>
+                            <div class="crud__form-input">
+                                <input type="file" name="archivo">
                             </div>                            
                         </div>
 
-                        <div class="date">
-                            <label for="fecha">Fecha del evento:</label>
-                            <input type="date" name="fecha">                        
+                        <div class="crud__form-element">
+                            <div class="crud__form-label">
+                                <label for="fecha">Fecha del evento:</label>
+                            </div>
+                            <div clas="crud__form-input">
+                                <input type="date" name="fecha">
+                            </div>                                                  
                         </div>                    
                         
-                        <div class="select">
-                            <div class="select-tittle">
+                        <div class="crud__form-element">
+                            <div class="crud__form-label">
                                 <label for="horarios">Horarios de las sesiones:</label>
                             </div>
-                            <div class="select-text">
+                            <div class="crud__form-input">
                                 <select name="horarios">
                                     <option value="doce">12.00h</option>
                                     <option value="cinco">17.00h</option>
@@ -159,12 +165,12 @@
                     </div>
                     <!--acaba 3 columnas-->
                     <!--empieza 2 columnas-->
-                    <div class="two-columns">
-                        <div class="input-radio">
-                            <div class="input-radio-tittle">
-                                <p>Escoge tu película favorita:</p>
+                    <div class="crud__form-two-columns">
+                        <div class="crud__form-element">
+                            <div class="crud__form-label">
+                                <label>Escoge tu película favorita:</label>
                             </div>
-                            <div class="input-radio-text">
+                            <div class="crud__form-input">
                                 <input type="radio" name="fav_film" value="Cicada">
                                 <label for="cicada">Cicada</label>
 
@@ -176,11 +182,11 @@
                             
                             </div>
                         </div>
-                        <div class="checkbox">
-                            <div class="checkbox-tittle">
-                                <p>Sesiones a las que irías:</p>
+                        <div class="crud__form-element">
+                            <div class="crud__form-label">
+                                <label>Sesiones a las que irías:</label>
                             </div>
-                            <div class="checkbox-text">
+                            <div class="crud__form-input">
                                 <input type="checkbox" name="cortometrajes" value="cortometrajes">
                                 <label for="cortometrajes">Cortometrajes</label>
                         
@@ -195,10 +201,15 @@
                     
                     <!--acaba 2 columnas-->
                     <!--empieza 1 columna-->
-                    <div class="one-column">                        
-                        <div class="textarea-text">
-                            <label for="observaciones">Otros datos de interés:</label>
-                            <textarea name="observaciones" rows="4" cols="50"></textarea>                            
+                    <div class="crud__form-one-column">                        
+                        <div class="crud__form-element">
+                            <div class= "crud__form-label">
+                                <label for="observaciones">Otros datos de interés:</label>
+                            </div>
+                            <div class="crud__form-input">
+                                <textarea name="observaciones" rows="4" cols="50"></textarea>
+                            </div>
+                                                        
                         </div>
                     </div>
                     <!--acaba 1 columna-->        

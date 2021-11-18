@@ -39,7 +39,7 @@ footer{
 ======Typography======
 ======================*/
 
-h1, h2, h3, h4, h5, h6, a, p, label{
+h1, h2, h3, h4, h5, h6, a, p {
     color: hsl(0, 0%, 100%);
 }
 
@@ -173,7 +173,7 @@ background-color: #dddddd;
 .crud{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    max-width: 45%;
 }
 
 .crud__table, .crud__form{
@@ -181,47 +181,41 @@ background-color: #dddddd;
     max-width: 45%;
 }
 
-.crud__form label{
+.crud__form element{
     min-width: 45%;
     max-width: 45%;
+    font-size: 2em;
+    color:rgb(255, 255, 255);
 }
 
-.four-columns{
+.crud__form-four-columns{
     display:flex;
-    justify-content: space-between;
-    padding-left: 5%;
+    justify-content: space-between;    
     padding-bottom: 2em;    
 }
 
-.three-columns{
+.crud__form-three-columns{
     display:flex;
-    justify-content: space-between;
-    padding-left: 5%;    
+    justify-content: space-between;        
     padding-bottom: 2em;
 }
 
-.two-columns{
+.crud__form-two-columns{
     display:flex;
     justify-content: space-between;
-    padding-left: 5%;
     padding-bottom: 2em;    
 }
 
-.input-radio-text label{
-    font-family: Arial;
-    font-size: 0.9em;
-    color:rgb(195, 233, 255)    
-}
 
-.checkbox-text label{  
+
+.crud__form-label{  
     font-family: Arial; 
     font-size: 0.9em;
     color:rgb(195, 233, 255) 
 }
 
-.one-column{
-    display:flex;
-    padding-left: 5%;
+.crud__form-one-column{
+    display:flex;        
     padding-bottom: 2em;    
 }
 .footer-element{
