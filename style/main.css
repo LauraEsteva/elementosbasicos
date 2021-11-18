@@ -39,7 +39,7 @@ footer{
 ======Typography======
 ======================*/
 
-h1, h2, h3, h4, h5, h6, a, p{
+h1, h2, h3, h4, h5, h6, a, p, label{
     color: hsl(0, 0%, 100%);
 }
 
@@ -51,7 +51,7 @@ h5, h6 {
     font-family: "Ubuntu Condensed";
 }
 
-a, td, p, button{
+a, td, p, button, label{
     font-family: "Ubuntu";
 }
 
@@ -160,15 +160,15 @@ table {
     width: 100%;
   }
   
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
 
 .crud{
     display: flex;
@@ -181,84 +181,49 @@ table {
     max-width: 45%;
 }
 
-.crud__form{
-    width: 100%;
+.crud__form label{
+    min-width: 45%;
+    max-width: 45%;
 }
 
-.crud__form-element{
-    margin-bottom: 1em;
-    width: 100%;
+.four-columns{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-bottom: 2em;    
 }
 
-.crud__form-label{
-    margin-bottom: 1em;
-    width: 100%;
+.three-columns{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 5%;    
+    padding-bottom: 2em;
 }
 
-.crud__form-label label{
-    color: hsl(0, 0%, 100%);
-	font-family: "Ubuntu";
-	font-weight: 600;
-	font-size: 1em;
-	transition: color 0.5s;
+.two-columns{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-bottom: 2em;    
 }
 
-.crud__form-label--active label{
-	color: hsl(19, 100%, 50%);
+.input-radio-text label{
+    font-family: Arial;
+    font-size: 0.9em;
+    color:rgb(195, 233, 255)    
 }
 
-.crud__form-input{
-    width: 100%;
+.checkbox-text label{  
+    font-family: Arial; 
+    font-size: 0.9em;
+    color:rgb(195, 233, 255) 
 }
 
-.crud__form-input input, 
-.crud__form-input textarea,
-.crud__form-input select {
-    background-color: rgb(255, 255, 255);
-	border: none;
-	border-bottom: 1px solid hsl(0, 0%, 73%);
-	box-sizing: border-box;
-    color: hsl(0, 0%, 0%);
-	font-family: "Ubuntu";
-	font-weight: 600;
-	padding: 0.2em 0.5em;
-	width: 100%;
+.one-column{
+    display:flex;
+    padding-left: 5%;
+    padding-bottom: 2em;    
 }
-
-.crud__form-input input:focus, .crud__form-input textarea:focus{
-	outline: none;
-}
-
-.crud__form-input select, .crud__form-input select:focus, .crud__form-input select:active { 
-	outline: 0 !important; 
-}
-
-.crud__store-button{
-	background-image: linear-gradient(to right, #253786 0%, #02A8B0 50%, #253786 100%);
-    background-size: 200% auto;
-    border-radius: 1em;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 1.2em;
-	font-weight: 600;
-	letter-spacing: 0;
-	line-height: 0px;
-    margin-top: 1em;
-	min-width: 20%;
-	padding: 1em 2em;
-	transition: 0.5s;
-	text-decoration: none;
-}
-
-.crud__store-button:hover{
-    background-size: 100% auto;
-}
-
-.crud__store-button:focus {
-	outline: 0;
-}
-
 .footer-element{
     width: 100%;
 }

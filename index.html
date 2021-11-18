@@ -91,24 +91,117 @@
                             </td>
                         </tr>
                     </table>
-                </div>
-               
-                <div class="crud__form">
-                    <form class="crud__admin-form" id="crud__user-form" action="/users/create" autocomplete="off"> 
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label for="name">Nombre</label>
+                </div>               
+                <div class="formulario">
+                    <!--empieza 4 columnas-->
+                    <div class="four-columns">
+                        <div class="name">
+                            <div class="name-tittle">
+                                <label for="name">Nombre:</label>
                             </div>
-
-                            <div class="crud__form-input">
+                            <div class="name-text">
                                 <input type="text" name="name">
                             </div>
                         </div>
-
-                        <div class="crud__form-element">
-                            <button class="crud__store-button">Guardar</button>
+                        <div class="email">
+                            <div class="email-tittle">
+                                <label for="email">Correo electrónico:</label>
+                            </div>
+                            <div class="email-text">
+                                <input type="email" name="email">
+                            </div>                             
                         </div>
-                    </form>
+                        <div class="password">
+                            <div class="password-tittle">
+                                <label for="pwd">Contraseña:</label>
+                            </div>
+                            <div class="password-text">
+                                <input type="password" name="password">
+                            </div>
+                        </div>
+                        <div class="number">
+                            <div class="number-tittle">
+                                <label for="precio">Precio:</label>
+                            </div>
+                            <div class="number-text">
+                                <input type="number" name="numero" min="10" max="250">
+                            </div>                            
+                        </div>
+                    </div>
+                    <!--acaba 4 columnas-->
+                    <!--empieza 3 columnas-->
+                    <div class="three-columns">
+                        <div class="input-archivo">                       
+                            <div class="input-archivo-text">
+                                <label for="archivo">Sube tu propuesta de cartel:</label>
+                                <input type="file" name="archivo">                        
+                            </div>                            
+                        </div>
+
+                        <div class="date">
+                            <label for="fecha">Fecha del evento:</label>
+                            <input type="date" name="fecha">                        
+                        </div>                    
+                        
+                        <div class="select">
+                            <div class="select-tittle">
+                                <label for="horarios">Horarios de las sesiones:</label>
+                            </div>
+                            <div class="select-text">
+                                <select name="horarios">
+                                    <option value="doce">12.00h</option>
+                                    <option value="cinco">17.00h</option>
+                                    <option value="siete">19.00h</option>
+                                    <option value="nueve">21.00h</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!--acaba 3 columnas-->
+                    <!--empieza 2 columnas-->
+                    <div class="two-columns">
+                        <div class="input-radio">
+                            <div class="input-radio-tittle">
+                                <p>Escoge tu película favorita:</p>
+                            </div>
+                            <div class="input-radio-text">
+                                <input type="radio" name="fav_film" value="Cicada">
+                                <label for="cicada">Cicada</label>
+
+                                <input type="radio" name="fav_film" value="Monsoon">
+                                <label for="monsoon">Monsoon</label>
+
+                                <input type="radio" name="fav_film" value="Finlandia">
+                                <label for="finlandia">Finlandia</label>
+                            
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <div class="checkbox-tittle">
+                                <p>Sesiones a las que irías:</p>
+                            </div>
+                            <div class="checkbox-text">
+                                <input type="checkbox" name="cortometrajes" value="cortometrajes">
+                                <label for="cortometrajes">Cortometrajes</label>
+                        
+                                <input type="checkbox" name="ficcion" value="Ficcion">
+                                <label for="ficcion">Largometrajes de ficción</label>
+                        
+                                <input type="checkbox" name="documental" value="documental">
+                                <label for="documental">Largometrajes documental</label>                                                 
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                    <!--acaba 2 columnas-->
+                    <!--empieza 1 columna-->
+                    <div class="one-column">                        
+                        <div class="textarea-text">
+                            <label for="observaciones">Otros datos de interés:</label>
+                            <textarea name="observaciones" rows="4" cols="50"></textarea>                            
+                        </div>
+                    </div>
+                    <!--acaba 1 columna-->        
                 </div>
             </div> 
         </main>
