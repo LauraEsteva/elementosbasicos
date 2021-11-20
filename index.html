@@ -50,169 +50,151 @@
                 <div class="crud__table">
                     <table>
                         <tr>
-                            <th>
-                                <p></p>id</p>
-                            </th>
+                            <th> Id </th>
     
-                            <th>
-                                <p>nombre</p>
-                            </th>
+                            <th> Nombre </th>
     
-                            <th>
-                                <p>email</p>
-                            </th>
+                            <th> Email </th>
                         </tr>
     
                         <tr>
-                            <td>
-                                <p>hola</p>
-                            </td>
+                            <td> Hola </td>
     
-                            <td>
-                                <p>ciao</p>
-                            </td>
+                            <td> Ciao </td>
     
-                            <td>
-                                <p>hello</p>
-                            </td>
+                            <td> Hello </td>
     
                         </tr>
                         <tr>
-                            <td>
-                                <p>hola</p>
-                            </td>
+                            <td> Hola </td>
     
-                            <td>
-                                <p>ciao</p>
-                            </td>
+                            <td> Ciao </td>
     
-                            <td>
-                                <p>hello</p>
-                            </td>
+                            <td> Hello </td>
                         </tr>
                     </table>
                 </div>               
                 <div class="crud__form">
-                    <!--empieza 4 columnas-->
-                    <div class="crud__form-four-columns">
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label for="name">Nombre:</label>
+                    <form>
+                        <!--empieza 4 columnas-->
+                        <div class="crud__form-four-columns">
+                            <div class="crud__form-element">
+                                <div class="crud__form-label">
+                                    <label for="name">Nombre:</label>
+                                </div>
+                                <div class="crud__form-input">
+                                    <input type="text" name="name">
+                                </div>
                             </div>
-                            <div class="crud__form-input">
-                                <input type="text" name="name">
+                            <div class="crud__form-element">
+                                <div class="crud__form-label">
+                                    <label for="email">Email:</label>
+                                </div>
+                                <div class="crud__form-input">
+                                    <input type="email" name="email">
+                                </div>                             
+                            </div>
+                            <div class="crud__form-element">
+                                <div class="crud__form-label">
+                                    <label for="pwd">Contraseña:</label>
+                                </div>
+                                <div class="crud__form-input">
+                                    <input type="password" name="password">
+                                </div>
+                            </div>
+                            <div class="crud__form-element">
+                                <div class="crud__form-label">
+                                    <label for="precio">Precio:</label>
+                                </div>
+                                <div class="crud__form-input">
+                                    <input type="number" name="numero" min="10" max="250">
+                                </div>                            
                             </div>
                         </div>
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label for="email">Correo electrónico:</label>
+                        <!--acaba 4 columnas-->
+                        <!--empieza 3 columnas-->
+                        <div class="crud__form-three-columns">
+                            <div class="crud__form-element">                       
+                                <div class="crud__form-label">
+                                    <label for="archivo">Sube tu propuesta de cartel:</label>                                                     
+                                </div>
+                                <div class="crud__form-input">
+                                    <input type="file" name="archivo">
+                                </div>                            
                             </div>
-                            <div class="crud__form-input">
-                                <input type="email" name="email">
-                            </div>                             
-                        </div>
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label for="pwd">Contraseña:</label>
-                            </div>
-                            <div class="crud__form-input">
-                                <input type="password" name="password">
-                            </div>
-                        </div>
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label for="precio">Precio:</label>
-                            </div>
-                            <div class="crud__form-input">
-                                <input type="number" name="numero" min="10" max="250">
-                            </div>                            
-                        </div>
-                    </div>
-                    <!--acaba 4 columnas-->
-                    <!--empieza 3 columnas-->
-                    <div class="crud__form-three-columns">
-                        <div class="crud__form-element">                       
-                            <div class="crud__form-label">
-                                <label for="archivo">Sube tu propuesta de cartel:</label>                                                     
-                            </div>
-                            <div class="crud__form-input">
-                                <input type="file" name="archivo">
-                            </div>                            
-                        </div>
 
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label for="fecha">Fecha del evento:</label>
+                            <div class="crud__form-element">
+                                <div class="crud__form-label">
+                                    <label for="fecha">Fecha del evento:</label>
+                                </div>
+                                <div clas="crud__form-input">
+                                    <input type="date" name="fecha">
+                                </div>                                                  
+                            </div>                    
+                        
+                            <div class="crud__form-element">
+                                <div class="crud__form-label">
+                                    <label for="horarios">Horarios:</label>
+                                </div>
+                                <div class="crud__form-input">
+                                    <select name="horarios">
+                                        <option value="doce">12.00h</option>
+                                        <option value="cinco">17.00h</option>
+                                        <option value="siete">19.00h</option>
+                                        <option value="nueve">21.00h</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div clas="crud__form-input">
-                                <input type="date" name="fecha">
-                            </div>                                                  
+                        </div>
+                        <!--acaba 3 columnas-->
+                        <!--empieza 2 columnas-->
+                        <div class="crud__form-two-columns">
+                            <div class="crud__form-element">
+                                <div class="crud__form-label">
+                                    <label>Escoge tu película favorita:</label>
+                                </div>
+                                <div class="crud__form-input">
+                                    <input type="radio" name="fav_film" value="Cicada">
+                                    <label for="cicada">Cicada</label>
+
+                                    <input type="radio" name="fav_film" value="Monsoon">
+                                    <label for="monsoon">Monsoon</label>
+
+                                    <input type="radio" name="fav_film" value="Finlandia">
+                                    <label for="finlandia">Finlandia</label>
+                                </div>
+                            </div>
+                            <div class="crud__form-element">
+                                <div class="crud__form-label">
+                                    <label>Sesiones a las que irías:</label>
+                                </div>
+                                <div class="crud__form-input">
+                                    <input type="checkbox" name="cortometrajes" value="cortometrajes">
+                                    <label for="cortometrajes">Cortometrajes</label>
+                        
+                                    <input type="checkbox" name="ficcion" value="Ficcion">
+                                    <label for="ficcion">Largo de ficción</label>
+                        
+                                    <input type="checkbox" name="documental" value="documental">
+                                    <label for="documental">Largo documental</label>                                                 
+                                </div>                            
+                            </div>
                         </div>                    
-                        
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label for="horarios">Horarios de las sesiones:</label>
-                            </div>
-                            <div class="crud__form-input">
-                                <select name="horarios">
-                                    <option value="doce">12.00h</option>
-                                    <option value="cinco">17.00h</option>
-                                    <option value="siete">19.00h</option>
-                                    <option value="nueve">21.00h</option>
-                                </select>
+                        <!--acaba 2 columnas-->
+                        <!--empieza 1 columna-->
+                        <div class="crud__form-one-column">                        
+                            <div class="crud__form-element">
+                                <div class= "crud__form-label">
+                                    <label for="observaciones">Otros datos de interés:</label>
+                                </div>
+                                <div class="crud__form-input">
+                                    <textarea name="observaciones" rows="4" cols="50"></textarea>
+                                </div>                                                        
                             </div>
                         </div>
-                    </div>
-                    <!--acaba 3 columnas-->
-                    <!--empieza 2 columnas-->
-                    <div class="crud__form-two-columns">
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label>Escoge tu película favorita:</label>
-                            </div>
-                            <div class="crud__form-input">
-                                <input type="radio" name="fav_film" value="Cicada">
-                                <label for="cicada">Cicada</label>
-
-                                <input type="radio" name="fav_film" value="Monsoon">
-                                <label for="monsoon">Monsoon</label>
-
-                                <input type="radio" name="fav_film" value="Finlandia">
-                                <label for="finlandia">Finlandia</label>
-                            
-                            </div>
-                        </div>
-                        <div class="crud__form-element">
-                            <div class="crud__form-label">
-                                <label>Sesiones a las que irías:</label>
-                            </div>
-                            <div class="crud__form-input">
-                                <input type="checkbox" name="cortometrajes" value="cortometrajes">
-                                <label for="cortometrajes">Cortometrajes</label>
-                        
-                                <input type="checkbox" name="ficcion" value="Ficcion">
-                                <label for="ficcion">Largometrajes de ficción</label>
-                        
-                                <input type="checkbox" name="documental" value="documental">
-                                <label for="documental">Largometrajes documental</label>                                                 
-                            </div>                            
-                        </div>
-                    </div>
-                    
-                    <!--acaba 2 columnas-->
-                    <!--empieza 1 columna-->
-                    <div class="crud__form-one-column">                        
-                        <div class="crud__form-element">
-                            <div class= "crud__form-label">
-                                <label for="observaciones">Otros datos de interés:</label>
-                            </div>
-                            <div class="crud__form-input">
-                                <textarea name="observaciones" rows="4" cols="50"></textarea>
-                            </div>
-                                                        
-                        </div>
-                    </div>
-                    <!--acaba 1 columna-->        
+                        <!--acaba 1 columna-->    
+                    </form>
+                       
                 </div>
             </div> 
         </main>

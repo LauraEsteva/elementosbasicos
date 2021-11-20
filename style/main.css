@@ -154,44 +154,54 @@ header{
 /*====================
 =========CRUD=========
 ======================*/
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-td, th {
-border: 1px solid #dddddd;
-text-align: left;
-padding: 8px;
+
+
+.crud__table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color:rgb(255, 255, 255);    
 }
 
 tr:nth-child(even) {
-background-color: #dddddd;
+    background-color: #dddddd;
 }
 
 .crud{
     display: flex;
     justify-content: space-between;
-    max-width: 45%;
+    width: 100%;
 }
 
 .crud__table, .crud__form{
     min-width: 45%;
     max-width: 45%;
 }
-
+.crud__table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+.crud__table table{
+    width: 100%;
+}
+  
 .crud__form element{
     min-width: 45%;
     max-width: 45%;
-    font-size: 2em;
+    font-size: 4em;
     color:rgb(255, 255, 255);
 }
 
+.crud__form-four-columns .crud__form-input input, .crud__form-input textarea, .crud__form-input select{
+    width: 100%;
+}
 .crud__form-four-columns{
-    display:flex;
+    display: flex;
     justify-content: space-between;    
     padding-bottom: 2em;    
+}
+.crud__form-four-columns .crud__form-element{
+    width: 23%;
 }
 
 .crud__form-three-columns{
@@ -206,18 +216,22 @@ background-color: #dddddd;
     padding-bottom: 2em;    
 }
 
-
-
 .crud__form-label{  
+    width: auto;
     font-family: Arial; 
-    font-size: 0.9em;
-    color:rgb(195, 233, 255) 
+    font-size: 1em;
+    color:rgb(195, 233, 255)
 }
 
 .crud__form-one-column{
     display:flex;        
-    padding-bottom: 2em;    
+    padding-bottom: 2em;      
 }
+
+.crud__form-two-columns .crud__form-input{
+    font-size: 0.8em;
+}
+
 .footer-element{
     width: 100%;
 }
