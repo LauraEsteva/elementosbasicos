@@ -16,14 +16,13 @@
 		<meta property="og:title"         content=""/>
 		<meta property="og:description"   content="" /> 
         -->
-
-        <link href="style/normalize.css" rel="stylesheet">
-        <link href="style/main.css" rel="stylesheet">
+        
+        <link href="css/app.css" rel="stylesheet">
     </head>
     
     <body>
         <header>
-            <div class="header-element logo">
+            <div class="header-element">
                 <div class="header-element logo__image">
                     <svg viewbox="0 0 24 24">
                     <path d="M18.36,2.64C20,2.64 21.36,4 21.36,5.64C21.36,7.29 20,8.64 18.36,8.64C16.71,8.64 15.36,7.29 15.36,5.64C15.36,5.34 15.41,5.06 15.5,4.8C14.43,4.29 13.25,4 12,4A8,8 0 0,0 4,12L4.04,12.84L2.05,13.05L2,12A10,10 0 0,1 12,2C13.69,2 15.28,2.42 16.67,3.16C17.16,2.83 17.74,2.64 18.36,2.64M18.36,4.64A1,1 0 0,0 17.36,5.64A1,1 0 0,0 18.36,6.64C18.92,6.64 19.36,6.19 19.36,5.64C19.36,5.08 18.92,4.64 18.36,4.64M5.64,15.36C7.29,15.36 8.64,16.71 8.64,18.36C8.64,18.66 8.59,18.94 8.5,19.2C9.57,19.71 10.75,20 12,20A8,8 0 0,0 20,12L19.96,11.16L21.95,10.95L22,12A10,10 0 0,1 12,22C10.31,22 8.72,21.58 7.33,20.84C6.84,21.17 6.26,21.36 5.64,21.36C4,21.36 2.64,20 2.64,18.36C2.64,16.71 4,15.36 5.64,15.36M5.64,17.36C5.08,17.36 4.64,17.81 4.64,18.36C4.64,18.92 5.08,19.36 5.64,19.36A1,1 0 0,0 6.64,18.36A1,1 0 0,0 5.64,17.36M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
@@ -31,14 +30,9 @@
                 </div>
 
                 <div class="header-element logo__title">
-                    <h1>Título</h1>
+                    <h1>título</h1>
                 </div>
-            </div>
-        
-            <div class="menuicon">
-                <img src="images/13009f5e88796daf57aef06ab6966ef5a3811eac.png">
-            </div>
-                
+            </div>                
         </header>
 
         <main>
@@ -50,152 +44,119 @@
                 <div class="crud__table">
                     <table>
                         <tr>
-                            <th> Id </th>
-    
-                            <th> Nombre </th>
-    
-                            <th> Email </th>
+                            <th> Id </th>    
+                            <th> Título </th>    
+                            <th> Precio </th>
                         </tr>
     
                         <tr>
-                            <td> Hola </td>
-    
-                            <td> Ciao </td>
-    
-                            <td> Hello </td>
+                            <td> 1 </td>
+                            <td> Middlesex </td>    
+                            <td> 14'90€ </td>
     
                         </tr>
                         <tr>
-                            <td> Hola </td>
-    
-                            <td> Ciao </td>
-    
-                            <td> Hello </td>
+                            <td> 2 </td>    
+                            <td> De nombre y Hueso </td>    
+                            <td> 19€ </td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>    
+                            <td> Annie en mis pensamientos </td>    
+                            <td> 17€ </td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>    
+                            <td> Yo, Simon, homo sapiens </td>    
+                            <td> 9,45€ </td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>    
+                            <td> Resistencia bisexual </td>    
+                            <td> 14,90€ </td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>    
+                            <td> El viaje de Marcos </td>    
+                            <td> 17,05€ </td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>    
+                            <td> Mi experiencia lesbiana con la soledad </td>    
+                            <td> 11,40€ </td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>    
+                            <td> A la conquesta del cos equivocat </td>    
+                            <td> 16,65€ </td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>    
+                            <td> Rojo, blanco y sangre azul </td>    
+                            <td> 17,10€ </td>
                         </tr>
                     </table>
-                </div>               
+                </div> 
+                <!--empieza formulario-->              
                 <div class="crud__form">
                     <form>
-                        <!--empieza 4 columnas-->
-                        <div class="crud__form-four-columns">
-                            <div class="crud__form-element">
-                                <div class="crud__form-label">
-                                    <label for="name">Nombre:</label>
+                        <div class="tabs">
+                            <div class="tabs-links">
+                                <div class="tabs-link tabs-link-selected" data-tab="1">
+                                    <span>Contenido</span>
                                 </div>
-                                <div class="crud__form-input">
-                                    <input type="text" name="name">
-                                </div>
-                            </div>
-                            <div class="crud__form-element">
-                                <div class="crud__form-label">
-                                    <label for="email">Email:</label>
-                                </div>
-                                <div class="crud__form-input">
-                                    <input type="email" name="email">
-                                </div>                             
-                            </div>
-                            <div class="crud__form-element">
-                                <div class="crud__form-label">
-                                    <label for="pwd">Contraseña:</label>
-                                </div>
-                                <div class="crud__form-input">
-                                    <input type="password" name="password">
+                                <div class="tabs-link" data-tab="2">
+                                    <span>Tienda</span>
                                 </div>
                             </div>
-                            <div class="crud__form-element">
-                                <div class="crud__form-label">
-                                    <label for="precio">Precio:</label>
+                            <!--empieza pestaña, tabs 1-->
+                            <div class="tabs-item tabs-item-selected" data-tab="1">
+                                <div class="crud__form-element">
+                                    <div class="crud__form-label">
+                                        <label for="name">Título:</label>
+                                    </div>
+                                    <div class="crud__form-input">
+                                        <input type="text" name="title">
+                                    </div>
                                 </div>
-                                <div class="crud__form-input">
-                                    <input type="number" name="numero" min="10" max="250">
-                                </div>                            
+                                <div class="crud__form-element">
+                                    <div class="crud__form-label">
+                                        <label for="name">Autor/a</label>
+                                    </div>
+                                    <div class="crud__form-input">
+                                        <input type="text" name="autor">
+                                    </div>
+                                </div>
+                                <div class="crud__form-element">
+                                    <div class="crud__form-label">
+                                        <label for="name">Editorial</label>
+                                    </div>
+                                    <div class="crud__form-input">
+                                        <input type="text" name="editor">
+                                    </div>
+                                </div>         
                             </div>
-                        </div>
-                        <!--acaba 4 columnas-->
-                        <!--empieza 3 columnas-->
-                        <div class="crud__form-three-columns">
-                            <div class="crud__form-element">                       
-                                <div class="crud__form-label">
-                                    <label for="archivo">Sube tu propuesta de cartel:</label>                                                     
-                                </div>
-                                <div class="crud__form-input">
-                                    <input type="file" name="archivo">
-                                </div>                            
+                            <!--acaba pestaña, tabs 1-->
+                            <!--empieza pestaña, tabs 2-->
+                            <div class="tabs-item" data-tab="2">
+                                <div class="crud__form-element">
+                                    <div class="crud__form-label">
+                                        <label for="precio">Precio:</label>
+                                    </div>
+                                    <div class="crud__form-input">
+                                        <input type="number" name="price" min="10" max="150">
+                                    </div>                            
+                                </div> 
                             </div>
-
-                            <div class="crud__form-element">
-                                <div class="crud__form-label">
-                                    <label for="fecha">Fecha del evento:</label>
-                                </div>
-                                <div clas="crud__form-input">
-                                    <input type="date" name="fecha">
-                                </div>                                                  
-                            </div>                    
-                        
-                            <div class="crud__form-element">
-                                <div class="crud__form-label">
-                                    <label for="horarios">Horarios:</label>
-                                </div>
-                                <div class="crud__form-input">
-                                    <select name="horarios">
-                                        <option value="doce">12.00h</option>
-                                        <option value="cinco">17.00h</option>
-                                        <option value="siete">19.00h</option>
-                                        <option value="nueve">21.00h</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <!--acaba 3 columnas-->
-                        <!--empieza 2 columnas-->
-                        <div class="crud__form-two-columns">
-                            <div class="crud__form-element">
-                                <div class="crud__form-label">
-                                    <label>Escoge tu película favorita:</label>
-                                </div>
-                                <div class="crud__form-input">
-                                    <input type="radio" name="fav_film" value="Cicada">
-                                    <label for="cicada">Cicada</label>
-
-                                    <input type="radio" name="fav_film" value="Monsoon">
-                                    <label for="monsoon">Monsoon</label>
-
-                                    <input type="radio" name="fav_film" value="Finlandia">
-                                    <label for="finlandia">Finlandia</label>
-                                </div>
-                            </div>
-                            <div class="crud__form-element">
-                                <div class="crud__form-label">
-                                    <label>Sesiones a las que irías:</label>
-                                </div>
-                                <div class="crud__form-input">
-                                    <input type="checkbox" name="cortometrajes" value="cortometrajes">
-                                    <label for="cortometrajes">Cortometrajes</label>
-                        
-                                    <input type="checkbox" name="ficcion" value="Ficcion">
-                                    <label for="ficcion">Largo de ficción</label>
-                        
-                                    <input type="checkbox" name="documental" value="documental">
-                                    <label for="documental">Largo documental</label>                                                 
-                                </div>                            
-                            </div>
-                        </div>                    
-                        <!--acaba 2 columnas-->
-                        <!--empieza 1 columna-->
-                        <div class="crud__form-one-column">                        
-                            <div class="crud__form-element">
-                                <div class= "crud__form-label">
-                                    <label for="observaciones">Otros datos de interés:</label>
-                                </div>
-                                <div class="crud__form-input">
-                                    <textarea name="observaciones" rows="4" cols="50"></textarea>
-                                </div>                                                        
-                            </div>
-                        </div>
-                        <!--acaba 1 columna-->    
+                            <!--acaba pestaña, tabs2-->                            
+                        </div>      
                     </form>
-                       
+                    <div class="button-send-form">
+                        <input type="submit" value="Enviar"> 
+                    </div>
+                     
                 </div>
+                <!--acaba formulario-->
             </div> 
         </main>
 
