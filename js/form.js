@@ -1,5 +1,7 @@
 
-export let send = (sendform) => {
+const sendform = document.getElementById("send-button");
+
+export let send = () => {
     sendform.addEventLister('click', () => {
         let formElement = document.getElementById("form-store");
         let formData = new FormData(formElement);
