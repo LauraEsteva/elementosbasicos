@@ -1,3 +1,3 @@
-import {tabs} from './table.js';
+import {tabs} from './tabs.js';
 
 tabs ();
