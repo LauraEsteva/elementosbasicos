@@ -3,9 +3,9 @@ const sendform = document.getElementById("send-button");
 
 export const send = () => {
 
-    sendform.addEventListener('click', () => {
+    sendform.addEventListener('click', (event) => {
 
-        sendform.preventDefault();
+        event.preventDefault();
 
         let formElement = document.getElementById("form-store");
         let formData = new FormData(formElement);
