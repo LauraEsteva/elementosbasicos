@@ -1,5 +1,5 @@
 import {tabs} from './tabs.js';
-import {formElement} from '.formdata.js';
+import {send} from './form.js';
 
 tabs ();
-formElement ();
+send ();
