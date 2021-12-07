@@ -1,0 +1,28 @@
+//typography
+$font-stack: "Ubuntu", sans-serif;
+$font-stack-condensed: "Ubuntu Condensed";
+
+//colors
+
+$color-primary: #003adb;
+$color-primary-darker: rgb(0, 36, 134);
+$color-primary-darkest: rgb(0, 25, 100);
+$color-secondary: rgb(192, 65, 247);
+$color-secondary-darker: rgb(123, 1, 184);
+$color-secondary-darkest: rgb(96, 7, 200);
+
+$color-complementary: rgb(219, 173, 9);
+$color-complementary-darker:rgb(219, 144, 0);
+$color-complementary-darkest:rgb(216, 100, 0);
+
+$grey: rgb(230, 230, 230);
+$grey-darker: rgb(204, 204, 204);
+$grey-darkest: rgb(179, 179, 179);
+$black: rgb(0, 0, 0);
+$black-brighter: rgb(26, 26, 26);
+$black-brightest: rgb(51, 51, 51);
+$white: rgb(255, 255, 255);
+
+
+//style
+$text-border: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;

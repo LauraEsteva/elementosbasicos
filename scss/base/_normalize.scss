@@ -75,7 +75,7 @@
   a {
     background-color: transparent;
   }
-  
+
   /**
    * 1. Remove the bottom border in Chrome 57-
    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -368,5 +368,6 @@ th {
 ==============================================================================*/
 ol, ul {
     list-style: none;
+    margin: 0;
     padding-left: 0;
 }

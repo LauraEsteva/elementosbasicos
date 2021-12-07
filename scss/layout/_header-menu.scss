@@ -1,0 +1,26 @@
+.header-element {
+    display: flex;
+    justify-content: center;
+}
+
+.logo__image{
+    fill: $grey-darker;
+    height: 5vh;
+    margin: auto 2%;
+}
+
+.logo__title{
+    margin: auto 5%;
+}
+
+.subtitle{
+    background-color: $color-secondary;
+    padding: 0.2em 0;
+    width: 100%;
+    border-radius: 0.5vh;
+}
+
+.subtitle h2{
+    text-align: center;
+}
+

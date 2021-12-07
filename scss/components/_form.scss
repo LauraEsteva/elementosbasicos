@@ -1,0 +1,36 @@
+/**
+{outline: 1px red solid;}
+*/
+
+.crud__form{
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.crud__form-element{
+    margin: 2em 0;
+}
+.crud__form-element label{    
+    font-size: 2vh;
+    color: $white;
+}
+
+.crud__form-input input{
+    height: auto;
+    width: 15em;
+    font-size: 2vh;
+    background-color: $grey-darker;
+    border-radius: 0.3vh;
+    border:none;
+    margin-top: 0.5vh;
+}
+
+.button-send-form input{
+    height: 3.5vh;
+    width: 12vh;
+    font-size: 1.5vh;
+    font-family: $font-stack;
+    background-color: $grey;
+    color: $color-primary-darkest;
+    border-radius: 2vh;
+}
