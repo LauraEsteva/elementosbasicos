@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico">
+
+		<title>Tienda</title>
+		<meta name="description" content="descripción de la web, se recomienda 90 caracteres">
+        <meta name="keywords" 	 content="palabras clave, separadas, por comas">
+
+		<!-- 
+        <meta property="fb:app_id"        content="" /> 
+		<meta property="og:url"           content="" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content=""/>
+		<meta property="og:description"   content="" /> 
+        -->
+
+    
+        <link href="css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>       
+            <div>
+               
+            </div>
+        </header>
+
+        <main>            
+            <div class="main-title">
+                 <span>Accede a tu cuenta</span>
+            </div>
+            <div class="cuerpo-acceso">
+                <div class="accede-correo-electronico">
+                    <form id="login-form" action="http://141.94.27.118:8080/api/login">
+                        <label for="email">Dirección de correo electrónico</label><br>
+                        <input type="text" name="email">
+
+                        <label for="pwd">Contraseña:</label>
+                        <input type="password" name="password">
+
+                        <p>Al continuar, aceptas nuestras <span>condiciones del servicio</span>.</p>
+                        <button id="login-button">Continuar</button>
+                    </form>
+                </div>
+                <div class="division">
+                    <span>o</span>
+                </div>
+                <div class="accede-google-apple">
+                    <div class="google">
+                        <button>
+                            <div class="google-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                                    <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/>
+                                    <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/>
+                                    <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/>
+                                    <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/>
+                                </svg>
+                            </div>
+                            <div class="google-text">
+                                <span>Continuar con Google</span>
+                            </div>    
+                        </button>
+                                            
+                    </div>
+                    <div class="apple">
+                        <button>
+                            <div class="apple-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256px" height="315px" viewBox="0 0 256 315" version="1.1" preserveAspectRatio="xMidYMid">            
+                                 <path d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div class="apple-text">
+                                <span>Continuar con Apple</span>
+                            </div>
+                        </button>
+                        
+                    </div>
+                    <div class="condiciones">
+                        <p>Si continúas con Google o Apple y aún no tienes ninguna cuenta
+                            de WordPress.com, crearás una cuenta, lo que significa que
+                            aceptas nuestras <span>condiciones de servicio</span>.
+                        </p>
+                    </div>
+                </div>                                
+            </div>
+            <div class="accesos-lista">
+                <ul>
+                    <li>Crear una cuenta</li>
+                    <li>Enviadme un enlace de acceso por correo electrónico</li>
+                    <li>¿Has olvidado tu contraseña</li>
+                </ul>
+            </div>
+        
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script src="js/form.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Roboto', 'Roboto+Condensed', 'Times New Roman']
+                }
+            });
+        </script>
+    </body>
+</html>

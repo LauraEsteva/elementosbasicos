@@ -1,0 +1,311 @@
+/*====================
+=======Structure======
+======================*/
+/**
+{outline: 1px red solid;}
+*/
+body{
+    background-color: rgb(245 245 245);
+    display:flex; 
+    flex-direction:column;    
+    margin: 0;
+    min-height: 100vh;
+    width: 40%;
+    padding: 5em 30%;
+}
+
+
+
+
+/*usando en svg width el % hace que se deforme el boton, por eso usamos em con width*/
+
+/*acaba header*/
+main{
+    margin: 0;
+    width: 50%;
+    padding: 0em 25%;
+}
+
+.cuerpo-acceso {
+    background-color: white;
+}
+
+
+
+footer{
+    margin-top: auto; 
+    width: 100%;
+}
+
+
+
+/*====================
+======Typography======
+======================*/
+
+h1{
+    color: rgb(255, 255, 255);
+}
+h2, h3, h4, h5, h6, a, p {
+    color: rgb(0, 0, 0);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto";
+}
+
+h5, h6 {
+    font-family: "Roboto Condensed";
+}
+
+a, td, button, span, li{
+    font-family: "Roboto";
+    font-size: 1em;
+}
+
+label, input{
+    font-family: "Roboto";
+    font-size: 0.85em;
+    color:rgb(114, 114, 114);
+    font-weight: bold;
+}
+
+p {
+    font-family: "Roboto";
+    font-size: 0.7em;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+h4 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:focus, a:hover {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+}
+
+.main-title span{
+    font-size: 1.2em;
+    color:rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+
+/*====================
+========Image=========
+======================*/
+
+img {
+    max-width: 100%;
+}
+    
+/*====================
+========Logo=========
+======================*/
+
+
+.logo__title{
+    margin-left: 1em;
+}
+
+.logo__title h1{
+    text-align: left;
+}
+
+.google-icon svg {
+    width: 2.2vh;
+    height: 2.2vh;
+    margin-right: 1vh;
+}
+.apple-icon svg{
+    width: 2vh;
+    height: 2vh;
+    margin-right: 1vh;
+}
+
+/*====================
+========Encuadre======
+======================*/
+.cuerpo-acceso {
+    border: 0.2vh solid rgb(202, 202, 202);
+    position: relative;
+}
+.accede-correo-electronico{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    border-bottom: 0.3vh solid rgb(202, 202, 202);
+}
+
+.accede-correo-electronico input{
+    min-width: 100%;
+    max-width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 0 1em 0;
+    padding: 0.45vh 0;
+}
+
+.accede-correo-electronico p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+}
+
+.accede-correo-electronico button{
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 0 1em 0;
+    padding: 1vh 0;
+    font-size: 1.5vh;
+    color:white;
+    background-color: rgb(197, 36, 130);
+    border:none;
+    border-radius: 0.2vh;
+}
+.accede-correo-electronico span{
+    display: inline;
+    vertical-align: super;
+    color:rgb(0, 119, 255);
+}
+
+.division span{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    background-color: white;
+    padding: 0 0.5vh;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+.google button{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    background-color: rgb(255, 255, 255);
+    padding: 0.7vh 0;
+    border-color: rgb(194, 194, 194);
+}
+
+.apple {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.apple button {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    background-color: rgb(255, 255, 255);
+    margin: 1em, 0;    
+    padding: 0.7vh 0;
+    border-color: rgb(194, 194, 194);
+}
+
+.google span{
+    font-size: 0.8em;
+}
+.apple span{
+    font-size: 0.8em;
+}
+
+.condiciones p{
+    text-align: center;
+    width: 85%;
+    padding: 0 7.5% 2em 7.5%;
+    line-height: 1.6;
+}
+
+.condiciones span{
+    color:rgb(0, 119, 255);
+}
+
+.accesos-lista li{
+    font-family: "Roboto";
+    font-size: 1.4vh;
+    font-weight: bold;
+    color:rgb(117, 117, 117);
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: 0.3vh solid rgb(202, 202, 202);
+}
+/*====================
+========Subtitle======
+======================*/
+
+.subtitle{
+    background-color: hsl(207, 85%, 69%);
+    padding: 0.2em 0;
+    width: 100%;
+}
+
+.subtitle h2{
+    text-align: center;
+}
+
+
+/*====================
+=========CRUD=========
+======================*/
+
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.crud{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-element{
+    width: 100%;
+}
+
+.footer-element p{
+    text-align: center;
+}
+
+.footer-element p:hover{
+    color: rgb(165, 96, 255)
+}
