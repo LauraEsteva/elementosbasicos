@@ -11,7 +11,7 @@ export const renderForm = () => {
 
             event.preventDefault();
     
-            let formElement = document.getElementById("form-store");
+            let formElement = document.getElementById("admin-form");
             let formData = new FormData(formElement);
     
             formData.append('fingerprint', getFingerprint());
