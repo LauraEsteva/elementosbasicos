@@ -1,7 +1,6 @@
 import {getFingerprint} from './client.js';
 import {ckEditorsFormDataAppendAll} from "./ckeditor.js";
 
-
 const sendform = document.getElementById("send-button");
 
 export const send = () => {
