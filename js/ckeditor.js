@@ -1,6 +1,9 @@
 import '../node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js';
 
 export const ckeditorIni = () => {
+
+    window.ckeditors = [];
+
     document.querySelectorAll(".ckeditor").forEach(editor => {
         ckeditorReplace(editor)
     });

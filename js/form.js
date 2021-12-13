@@ -1,4 +1,6 @@
 import {getFingerprint} from './client.js';
+import {ckEditorsFormDataAppendAll} from "./ckeditor.js";
+
 
 const sendform = document.getElementById("send-button");
 
@@ -13,9 +15,13 @@ export const send = () => {
 
         formData.append('fingerprint', getFingerprint());
 
-        // Código para revisar los datos que estamos enviando
-        // for (var pair of formData.entries()) {
-        //     console.log(pair[0]+ ', ' + pair[1]); 
-        // } 
+        if(document.querySelectorAll('.ckeditor')){
+            ckEditorsFormDataAppendAll(formData);
+        }
+
+        //Código para revisar los datos que estamos enviando
+        for (var pair of formData.entries()) {
+            console.log(pair[0]+ ', ' + pair[1]); 
+        } 
     })   
 }
