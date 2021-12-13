@@ -19,25 +19,12 @@ export const send = () => {
                 ckEditorsFormDataAppendAll(formData);
             }
     
-            //Código para revisar los datos que estamos enviando
-            for (var pair of formData.entries()) {
-                console.log(pair[0]+ ', ' + pair[1]); 
-            } 
-        }) 
-    }
-    if(loginButton){
-
-        loginButton.addEventListener("click", (event) => {
-
-            event.preventDefault();
-    
-            let url = loginForm.action;
-            let data = new FormData(loginForm);
-            data.append("fingerprint", getFingerprint());
-    
             let sendPostRequest = async () => {
         
                 let request = await fetch(url, {
+                    headers: {
+                        'Authorization': 'Bearer ' + localStorage.getItem('token'),
+                    },
                     method: 'POST', 
                     body: data
                 })
@@ -102,7 +89,8 @@ export const send = () => {
             };
     
             sendPostRequest();
-            
-        });
+        }) 
+    }
+    
     }
 }
