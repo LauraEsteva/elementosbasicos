@@ -12,7 +12,7 @@ export const renderForm = () => {
             event.preventDefault();
     
             let formElement = document.getElementById("admin-form");
-            let formData = new FormData(formElement);
+            let data = new FormData(formElement);
             let url = formElement.action;
     
             formData.append('fingerprint', getFingerprint());
