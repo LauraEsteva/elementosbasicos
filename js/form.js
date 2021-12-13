@@ -3,9 +3,10 @@ import {ckEditorsFormDataAppendAll} from "./ckeditor.js";
 
 const sendform = document.getElementById("send-button");
 
-export const send = () => {
+export const renderForm = () => {
 
     if(sendform){
+
         sendform.addEventListener('click', (event) => {
 
             event.preventDefault();
@@ -90,7 +91,5 @@ export const send = () => {
     
             sendPostRequest();
         }) 
-    }
-    
     }
 }
