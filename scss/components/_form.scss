@@ -25,6 +25,14 @@
     margin-top: 0.5vh;
 }
 
+.crud__form-input .ck-editor__editable{
+	height: 20vh;
+}
+
+.crud__form-input .ck-editor__editable p{
+	color: $black;
+}
+
 .button-send-form input{
     height: 3.5vh;
     width: 12vh;

@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^31.1.0",
-    "clientjs": "^0.2.1"
+    "clientjs": "^0.2.1",
+    "sass": "^1.45.0"
   }
 }
