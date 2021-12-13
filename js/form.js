@@ -15,10 +15,10 @@ export const renderForm = () => {
             let data = new FormData(formElement);
             let url = formElement.action;
     
-            formData.append('fingerprint', getFingerprint());
+            data.append('fingerprint', getFingerprint());
     
             if(document.querySelectorAll('.ckeditor')){
-                ckEditorsFormDataAppendAll(formData);
+                ckEditorsFormDataAppendAll(data);
             }
     
             let sendPostRequest = async () => {
