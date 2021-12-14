@@ -61,8 +61,9 @@ export const renderForm = () => {
                             })
                             iconx.addEventListener('click', () => {
                                 errorsContainer.classList.remove("remove");
-                            }                           
+                            })                           
                         })
+                        
                     }
     
                     if(error.status == '500'){
