@@ -53,9 +53,7 @@ export const renderForm = () => {
                             Object.keys(errors).forEach( (key) => {
                                 let errorMessage = document.createElement('li');
                                 errorMessage.textContent = errors[key];
-                                console.log(errorMessage);
-                                console.log(key);
-                                errorsContainer.insertAdjacentElement('beforebegin', errorMessage);
+                                errorsContainer.insertAdjacentElement('beforeend', errorMessage);
                                 document.querySelector(`[name=${key}]`).classList.add("error");
                             })
                         })
