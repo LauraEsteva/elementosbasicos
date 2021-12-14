@@ -26,7 +26,7 @@
 }
 
 .crud__form-input input.error{
-    border: 1px solid hsl(0, 100%, 50%);
+    border: 1px solid $red;
 }
 
 .crud__form-input .ck-editor__editable{
@@ -45,4 +45,10 @@
     background-color: $grey;
     color: $color-primary-darkest;
     border-radius: 2vh;
+}
+
+#errors {
+    font-family: $font-stack-condensed;
+    background-color: $color-complementary;
+    color: $red;
 }
