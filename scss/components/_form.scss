@@ -24,8 +24,12 @@
     border:none;
     margin-top: 0.5vh;
 }
+#errors{
+    display: none;
+}
 
-.active li{
+#errors.active{
+    display: block;
     background-color: $color-secondary;
     font-family: $font-stack-condensed;
     background-color: $color-complementary;
