@@ -48,14 +48,14 @@ export const renderForm = () => {
                         error.json().then(jsonError => {
     
                             let errors = jsonError.data;
-                            console.log(errors)    
+                            let errorsContainer = document.getElementById('errors');
     
                             Object.keys(errors).forEach( (key) => {
                                 let errorMessage = document.createElement('li');
                                 errorMessage.textContent = errors[key];
                                 console.log(errorMessage);
                                 console.log(key);
-
+                                errorsContainer.insertAdjacentElement('beforeend', errorMessage);
                                 document.querySelector(`[name=${key}]`).classList.add("error");
                             })
                         })
