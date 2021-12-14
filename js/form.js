@@ -63,9 +63,11 @@ export const renderForm = () => {
 
                             closedButton.addEventListener('click', () => {
                                 errorsContainer.classList.remove("active");
-                                let errorMessage = document.createElement('li');
-                                errorMessage.textContent = errors[key];
-                                document.querySelector(`[name=${key}]`).classList.remove("error");
+                                Object.keys(errors).forEach( (key) => {
+                                    let errorMessage = document.createElement('li');
+                                    errorMessage.textContent = errors[key];
+                                    document.querySelector(`[name=${key}]`).classList.remove("error");
+                                })                                
                             })                           
                         })
                         
