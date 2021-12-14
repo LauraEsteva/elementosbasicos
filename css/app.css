@@ -598,6 +598,10 @@ footer {
   margin-top: 0.5vh;
 }
 
+.crud__form-input input.error {
+  border: 1px solid red;
+}
+
 .crud__form-input .ck-editor__editable {
   height: 20vh;
 }
@@ -779,7 +783,7 @@ a, td, button, span, li {
 label, input {
   font-family: "Roboto";
   font-size: 0.85em;
-  color: #727272;
+  color: black;
   font-weight: bold;
 }
 
