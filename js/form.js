@@ -61,6 +61,7 @@ export const renderForm = () => {
                             })
                             iconx.addEventListener('click', () => {
                                 errorsContainer.classList.remove("active");
+                                errorsContainer.removeAttribute(insertAdjacentElement);
                             })                           
                         })
                         
