@@ -55,7 +55,7 @@ export const renderForm = () => {
                                 errorMessage.textContent = errors[key];
                                 console.log(errorMessage);
                                 console.log(key);
-                                errorsContainer.insertAdjacentElement('beforeend', errorMessage);
+                                errorsContainer.insertAdjacentElement('beforebegin', errorMessage);
                                 document.querySelector(`[name=${key}]`).classList.add("error");
                             })
                         })
