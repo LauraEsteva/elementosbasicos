@@ -50,7 +50,7 @@ export const renderForm = () => {
                             let errors = jsonError.data;
                             let errorsContainer = document.getElementById('errors');
                             let errorsMessages = document.getElementById('errors-messages');
-                            let closedButton = document.getElementById('closed-button');
+                            let closedButton = document.getElementById('iconx');
                             errorsMessages.innerHTML = "";
                             errorsContainer.classList.add("active");
 
