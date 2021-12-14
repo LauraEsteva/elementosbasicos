@@ -53,11 +53,12 @@ export const renderForm = () => {
                             Object.keys(errors).forEach( (key) => {
                                 let errorMessage = document.createElement('li');
                                 errorMessage.textContent = errors[key];
-                                console.log(errorMessage)
-                                console.log(key)
+                                console.log(errorMessage);
+                                console.log(key);
+
+                                document.querySelector(`[name=${key}]`).classList.add("error");
                             })
                         })
-                        let element = document.querySelector("form[name='admin-form'] input[name='name']");
                     }
     
                     if(error.status == '500'){
