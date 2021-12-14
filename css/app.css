@@ -641,6 +641,16 @@ footer {
   border-radius: 2vh;
 }
 
+#role {
+  height: 3.5vh;
+  width: 12vh;
+  font-size: 2vh;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #e6e6e6;
+  color: #001964;
+  border-radius: 2vh;
+}
+
 .crud__table {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5vh;
