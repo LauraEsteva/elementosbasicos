@@ -642,8 +642,8 @@ footer {
 }
 
 #role {
-  height: auto;
-  width: 10vh;
+  height: 2vh;
+  width: auto;
   font-size: 1vh;
   font-family: "Ubuntu", sans-serif;
   background-color: #cccccc;
