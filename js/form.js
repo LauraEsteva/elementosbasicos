@@ -58,7 +58,10 @@ export const renderForm = () => {
                                 errorMessage.textContent = errors[key];
                                 errorsContainer.insertAdjacentElement('beforeend', errorMessage);
                                 document.querySelector(`[name=${key}]`).classList.add("error");                                
-                            })                            
+                            })
+                            iconx.addEventListener('click', () => {
+                                errorsContainer.classList.remove("remove");
+                            }                           
                         })
                     }
     
