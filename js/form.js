@@ -60,8 +60,7 @@ export const renderForm = () => {
                                 document.querySelector(`[name=${key}]`).classList.add("error");                                
                             })
                             iconx.addEventListener('click', () => {
-                                errorsContainer.classList.remove("active");
-                                errorsContainer.removeAttribute(insertAdjacentElement);
+                                errorsContainer.classList.remove("active");                                
                             })                           
                         })
                         
