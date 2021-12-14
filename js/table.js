@@ -21,7 +21,7 @@ export const table = () => {
                         return response.json();
                     })
                     .then(json => {
-                        // console.log(headers);
+                        console.log(headers);
                         console.log(json.data);
                     });                    
                 };
