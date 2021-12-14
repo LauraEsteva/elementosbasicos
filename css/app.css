@@ -598,6 +598,12 @@ footer {
   margin-top: 0.5vh;
 }
 
+#errors .error {
+  font-family: "Ubuntu Condensed";
+  background-color: #dbad09;
+  color: red;
+}
+
 .crud__form-input input.error {
   border: 1px solid red;
 }
