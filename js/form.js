@@ -50,11 +50,11 @@ export const renderForm = () => {
                             let errors = jsonError.data;
                             console.log(errors)    
     
-                            Object.keys(errors).forEach( (key) => {
+                            Object.entries(errors).forEach( (key,value) => {
                                 let errorMessage = document.createElement('li');
                                 errorMessage.textContent = errors[key];
-                                console.log(errorMessage)
                                 console.log(key)
+                                console.log(value)
                             })
                         })   
                     }
