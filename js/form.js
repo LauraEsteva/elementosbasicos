@@ -56,7 +56,8 @@ export const renderForm = () => {
                                 console.log(errorMessage)
                                 console.log(key)
                             })
-                        })   
+                        })
+                        let element = document.querySelector("form[name='admin-form'] input[name='name']");
                     }
     
                     if(error.status == '500'){
