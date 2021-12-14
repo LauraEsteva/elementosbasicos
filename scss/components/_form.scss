@@ -25,6 +25,10 @@
     margin-top: 0.5vh;
 }
 
+.crud__form-input input.error{
+    border: 1px solid hsl(0, 100%, 50%);
+}
+
 .crud__form-input .ck-editor__editable{
 	height: 20vh;
 }

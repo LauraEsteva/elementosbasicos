@@ -49,12 +49,13 @@ export const renderForm = () => {
     
                             let errors = jsonError.data;
                             console.log(errors)    
+
+                            console.log(Object.keys(errors));
     
                             Object.keys(errors).forEach( (key) => {
                                 let errorMessage = document.createElement('li');
                                 errorMessage.textContent = errors[key];
-                                console.log(key)
-                                console.log(errors[key])
+                                console.log(key);
                             })
                         })   
                     }
