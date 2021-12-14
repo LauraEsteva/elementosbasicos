@@ -610,6 +610,14 @@ footer {
   color: red;
 }
 
+#iconx {
+  width: 0;
+}
+
+#iconx.active {
+  width: 2vh;
+}
+
 .crud__form-input input.error {
   border: 1px solid red;
 }

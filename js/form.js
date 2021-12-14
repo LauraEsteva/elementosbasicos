@@ -49,7 +49,9 @@ export const renderForm = () => {
     
                             let errors = jsonError.data;
                             let errorsContainer = document.getElementById('errors');
+                            let iconx = document.getElementById('iconx');
                             errorsContainer.classList.add("active");
+                            iconx.classList.add("active");
 
                             Object.keys(errors).forEach( (key) => {
                                 let errorMessage = document.createElement('li');
