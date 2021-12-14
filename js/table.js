@@ -25,9 +25,10 @@ export const table = () => {
                         console.log(json.data);
                     });                    
                 };
+                sendGetRequest();
             });        
         };
     });
 }
-sendGetRequest();
+
     
