@@ -50,7 +50,7 @@ export const renderForm = () => {
                             let errors = jsonError.data;
                             let errorsContainer = document.getElementById('errors');
                             let errorsMessages = document.getElementById('errors-messages');
-                            let iconx = document.getElementById('iconx');
+                            let closedButton = document.getElementById('closed-button');
                             errorsMessages.innerHTML = "";
                             errorsContainer.classList.add("active");
 
@@ -61,8 +61,9 @@ export const renderForm = () => {
                                 document.querySelector(`[name=${key}]`).classList.add("error");                                
                             })
 
-                            iconx.addEventListener('click', () => {
-                                errorsContainer.classList.remove("active");                                
+                            closedButton.addEventListener('click', () => {
+                                errorsContainer.classList.remove("active");
+                                document.querySelector(`[name=${key}]`).classList.remove("error");
                             })                           
                         })
                         
