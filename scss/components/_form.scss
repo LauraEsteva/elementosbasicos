@@ -38,15 +38,11 @@
 }
 
 #iconx{
-    width: 0;
+    width: 2vh;
     position: absolute;
     right: 0;
     top: 0;
     cursor: pointer;
-}
-
-#iconx.active{
-    width: 2vh;
 }
 
 .crud__form-input input.error{
