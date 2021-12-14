@@ -49,16 +49,18 @@ export const renderForm = () => {
     
                             let errors = jsonError.data;
                             let errorsContainer = document.getElementById('errors');
+                            let errorsMessages = document.getElementById('errors-messages');
                             let iconx = document.getElementById('iconx');
+                            errorsMessages.innerHTML = "";
                             errorsContainer.classList.add("active");
-                            iconx.classList.add("active");
 
                             Object.keys(errors).forEach( (key) => {
                                 let errorMessage = document.createElement('li');
                                 errorMessage.textContent = errors[key];
-                                errorsContainer.insertAdjacentElement('beforeend', errorMessage);
+                                errorsMessages.insertAdjacentElement('beforeend', errorMessage);
                                 document.querySelector(`[name=${key}]`).classList.add("error");                                
                             })
+
                             iconx.addEventListener('click', () => {
                                 errorsContainer.classList.remove("active");                                
                             })                           
