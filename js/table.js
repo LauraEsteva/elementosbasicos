@@ -33,7 +33,7 @@ export const table = () => {
 
                         Object.keys(data[0]).forEach( (key) =>{
                             console.log(key);
-                            headerElement.insertAdjacentElement('afterbegin', tableElement);                            
+                                                        
                         });
                         
                         Object.values(data).forEach( (value) =>{
@@ -44,8 +44,8 @@ export const table = () => {
 
                 //        Object.keys(users).forEach( (key) =>{
                 //            headerTable.textContent = [key];
-                //            users.insertAdjacentElement('beforeend', errorMessage);
                 //            document.querySelector(`[name=${key}]`).classList.add("error");
+                //            headerElement.insertAdjacentElement('afterbegin', tableElement);
                 //        })
 
                 //    })
