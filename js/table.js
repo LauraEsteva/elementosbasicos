@@ -1,7 +1,8 @@
 export const table = () => {
     window.addEventListener('load', () =>{
 
-        let tables = document.querySelectorAll("#tabla");
+        let tables = document.querySelector("#tabla");
+        
         if(tables){
             tables.forEach(table => {
                 let url = table.dataset.url;
