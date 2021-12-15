@@ -27,11 +27,12 @@ export const table = () => {
                         let data = json.data;
                         let tableElement = document.createElement('table');
                         let tableHeader = document.createElement('tr');
+                        let tableHeaders = document.createElement('th');
                         tableElement.appendChild(tableHeader);
+                        tableHeader.appendChild(tableHeader);
 
                         Object.keys(data[0]).forEach( (key) =>{
-                            console.log(key);
-                            let tableHeaders = document.createElement('th');
+                            console.log(key);                            
                         });
 
                         // Object.keys(data).forEach( (key) =>{
