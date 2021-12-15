@@ -35,8 +35,8 @@ export const table = () => {
                             console.log(key);                            
                         });
                         
-                        Object.values(data).forEach( (entries) =>{
-                            console.log(entries);
+                        Object.values(data).forEach( (value) =>{
+                            console.log(value);
                         })  
                     })
    
