@@ -27,29 +27,28 @@ export const table = () => {
                         let data = json.data;
                         let tableElement = document.createElement('table');
                         let tableHeader = document.createElement('tr');
-                        let headerElement = document.createElement('th');
                         tableElement.appendChild(tableHeader);
-                        tableHeader.appendChild(headerElement);
 
                         Object.keys(data[0]).forEach( (key) =>{
-                            console.log(key);
-                                                        
+                            let headerElement = document.createElement('th');
+                            headerElement.textContent = key;
+                            tableHeader.appendChild(headerElement);        
                         });
-                        
-                        Object.values(data).forEach( (value) =>{
-                            console.log(value);
+
+                        data.forEach( row => {
+
+                            let values = document.createElement('tr');
+                            tableElement.appendChild(values);
+
+                            Object.values(row).forEach( (value) =>{
+                                let field = document.createElement('td');
+                                field.textContent = value;
+                                values.appendChild(field);        
+                            });
                         })
-                         
+  
+                        table.appendChild(tableElement);
                     })
-   
-
-                //        Object.keys(users).forEach( (key) =>{
-                //            headerTable.textContent = [key];
-                //            document.querySelector(`[name=${key}]`).classList.add("error");
-                //            headerElement.insertAdjacentElement('afterbegin', tableElement);
-                //        })
-
-                //    })
                     .catch(error => {
                     
                         console.log(error);
