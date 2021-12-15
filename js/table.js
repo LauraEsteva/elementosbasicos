@@ -30,32 +30,18 @@ export const table = () => {
                         let headerElement = document.createElement('th');
                         tableElement.appendChild(tableHeader);
                         tableHeader.appendChild(headerElement);
-                        
+
                         Object.keys(data[0]).forEach( (key) =>{
                             console.log(key);                            
                         });
-
-                        // Object.keys(data).forEach( (key) =>{
-
-                        //     console.log(key);
-                        //     let tableHeaderElement = document.createElement('th');
-                        //     tableHeaderElement.textContent = key;
-                        // })                        
-
+                        
+                        Object.values(data).forEach( (values) =>{
+                            console.log(values);
+                        })  
                     })
-
-                    
-                //    .then(json => {
-                //        console.log(json.data);
-                //    })
-
-
-               //     .then(json => {
-                //        console.log(json.data);
-                //        let users = json.data;
+   
 
                 //        Object.keys(users).forEach( (key) =>{
-                //            let headerTable = document.createElement('th');
                 //            headerTable.textContent = [key];
                 //            users.insertAdjacentElement('beforeend', errorMessage);
                 //            document.querySelector(`[name=${key}]`).classList.add("error");
