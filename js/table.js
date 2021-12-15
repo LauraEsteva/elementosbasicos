@@ -6,7 +6,7 @@ export const table = () => {
         if(tables){
 
             tables.forEach(table => {
-                
+
                 let url = table.dataset.url;
                 // let headers = JSON.parse(table.dataset.headers);
                 
