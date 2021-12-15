@@ -31,15 +31,18 @@ export const table = () => {
                         tableElement.appendChild(tableHeader);
 
                         data.forEach( row => {
-                            console.log(row[0]);
+                            
+                            Object.keys(row[0]).forEach((key) =>{
+                                console.log(key);
+                            })
                         })
 
-                        Object.keys(data).forEach( (key) =>{
+                        // Object.keys(data).forEach( (key) =>{
 
-                            console.log(key);
-                            let tableHeaderElement = document.createElement('th');
-                            tableHeaderElement.textContent = key;
-                        })                        
+                        //     console.log(key);
+                        //     let tableHeaderElement = document.createElement('th');
+                        //     tableHeaderElement.textContent = key;
+                        // })                        
 
                     })
 
