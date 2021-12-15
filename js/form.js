@@ -38,7 +38,6 @@ export const renderForm = () => {
                     return response.json();
                 })
                 .then(json => {
-                    localStorage.setItem('token', json.data);
                     console.log(json.data);
                 })
                 .catch(error => {
