@@ -30,10 +30,9 @@ export const table = () => {
                         let tableHeader = document.createElement('tr');
                         tableElement.appendChild(tableHeader);
 
-                        console.log(Object.keys(data[0]));
-                        // Object.keys(data[0]).forEach((key) =>{
-                        //     console.log(key);
-                        // })
+                        Object.keys(data[0]).forEach( (key) =>{
+                            console.log(key);
+                        })
 
                         // Object.keys(data).forEach( (key) =>{
 
