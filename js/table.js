@@ -1,10 +1,12 @@
 export const table = () => {
-    window.addEventListener('load', () =>{
+    window.addEventListener("load", () =>{
 
-        let tables = document.querySelector("#tabla");
-        
+        let tables = document.querySelectorAll(".tabla");
+
         if(tables){
+
             tables.forEach(table => {
+                
                 let url = table.dataset.url;
                 // let headers = JSON.parse(table.dataset.headers);
                 
