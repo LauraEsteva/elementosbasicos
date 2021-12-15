@@ -39,11 +39,7 @@ export const table = () => {
                         Object.values(data).forEach( (value) =>{
                             console.log(value);
                         })
-                        headerElement.forEach( (value) => {
-                            document.createElement('td');
-                        }
-
-                        )  
+                         
                     })
    
 
