@@ -31,8 +31,8 @@ export const table = () => {
                         tableElement.appendChild(tableHeader);
 
                         data.forEach( row => {
-                            
-                            Object.keys(row[0]).forEach((key) =>{
+
+                            Object.keys(row).forEach((key) =>{
                                 console.log(key);
                             })
                         })
