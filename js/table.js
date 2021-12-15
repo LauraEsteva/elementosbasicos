@@ -8,7 +8,6 @@ export const table = () => {
             tables.forEach(table => {
 
                 let url = table.dataset.url;
-                // let headers = JSON.parse(table.dataset.headers);
                 
                 let sendGetRequest = async () => {
             
@@ -20,11 +19,10 @@ export const table = () => {
                     })
                     .then(response => {
                         if (!response.ok) throw response;
-                        console.log(response.data);
+                        
                         return response.json();
                     })
                     .then(json => {
-                        console.log(headers);
                         console.log(json.data);
                     });                    
                 };
