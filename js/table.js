@@ -32,12 +32,15 @@ export const table = () => {
                         tableHeader.appendChild(headerElement);
 
                         Object.keys(data[0]).forEach( (key) =>{
-                            console.log(key);                            
+                            console.log(key); 
+                            Object.values(data).forEach( (value) =>{
+                                console.log(value);
+                            })                            
                         });
                         
-                        Object.values(data).forEach( (value) =>{
-                            console.log(value);
-                        })  
+                        //Object.values(data).forEach( (value) =>{
+                        //    console.log(value);
+                        //})  
                     })
    
 
