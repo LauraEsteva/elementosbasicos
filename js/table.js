@@ -29,7 +29,6 @@ export const table = () => {
                         let tableHeader = document.createElement('tr');
                         let tableHeaders = document.createElement('th');
                         tableElement.appendChild(tableHeader);
-                        tableHeader.appendChild(tableHeader);
 
                         Object.keys(data[0]).forEach( (key) =>{
                             console.log(key);                            
