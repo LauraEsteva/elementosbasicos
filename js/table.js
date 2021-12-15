@@ -24,6 +24,7 @@ export const table = () => {
                     })
                     .then(json => {
 
+                        console.log(json.data);
                         let data = json.data;
                         let tableElement = document.createElement('table');
                         let tableHeader = document.createElement('tr');
