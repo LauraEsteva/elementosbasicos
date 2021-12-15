@@ -31,6 +31,7 @@ export const table = () => {
 
                         Object.keys(data[0]).forEach( (key) =>{
                             console.log(key);
+                            document.createElement('th');
                         });
 
                         // Object.keys(data).forEach( (key) =>{
