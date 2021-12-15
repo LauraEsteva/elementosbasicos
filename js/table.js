@@ -32,7 +32,8 @@ export const table = () => {
                         tableHeader.appendChild(headerElement);
 
                         Object.keys(data[0]).forEach( (key) =>{
-                            console.log(key);                            
+                            console.log(key);
+                            headerElement.insertAdjacentElement('afterbegin', tableElement);                            
                         });
                         
                         Object.values(data).forEach( (value) =>{
