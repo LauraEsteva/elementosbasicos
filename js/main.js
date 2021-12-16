@@ -4,9 +4,11 @@ import {ckeditorIni} from "./ckeditor.js";
 import {renderLoginForm} from "./loginForm.js";
 //import {table} from "./table.js";
 import "./tablecomponent.js";
+import {renderAlertMessage} from './alertMessage.js';
 
 tabs();
 renderForm();
 ckeditorIni();
 renderLoginForm();
 //table();
+renderAlertMessage();

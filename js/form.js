@@ -22,14 +22,14 @@ export const renderForm = () => {
             }
     
             let sendPostRequest = async () => {
-        
                 let request = await fetch(url, {
                     headers: {
                         'Authorization': 'Bearer ' + localStorage.getItem('token'),
                     },
                     method: 'POST', 
-                    body: data
+                    body: data                 
                 })
+                
                 .then(response => {
                     if (!response.ok) throw response;
     
@@ -38,6 +38,7 @@ export const renderForm = () => {
                     return response.json();
                 })
                 .then(json => {
+                    document.dispatchEvent(new CustomEvent('newData'));
                     console.log(json.data);
                 })
                 .catch(error => {
@@ -76,6 +77,7 @@ export const renderForm = () => {
                         console.log(error);
                     }
                 });
+
     
                 // En caso de usar Axios
                 
