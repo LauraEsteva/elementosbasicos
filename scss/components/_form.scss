@@ -12,7 +12,7 @@
 }
 .crud__form-element label{    
     font-size: 2vh;
-    color: $white;
+    color: $black-brightest;
 }
 
 .crud__form-input input{
@@ -36,25 +36,25 @@
     position: relative;
 }
 
-#alert-message{
-    display: none;
-}
+// #alert-message{
+//     display: none;
+// }
 
-#alert-message.active{
-    display: block;
-    background-color: $grey;
-    color: $black-brighter;
-    font-family: $font-stack;
-    width: 15%;
-    text-align: center;
-    margin-top:2vh;
-    padding: 1vh;
-    border-radius: 1vh;
-    border: 1px solid $black;
-    position: fixed;
-    right:2vh;
-    bottom: 5%;
-}
+// #alert-message.active{
+//     display: block;
+//     background-color: $grey;
+//     color: $black-brighter;
+//     font-family: $font-stack;
+//     width: 15%;
+//     text-align: center;
+//     margin-top:2vh;
+//     padding: 1vh;
+//     border-radius: 1vh;
+//     border: 1px solid $black;
+//     position: fixed;
+//     right:2vh;
+//     bottom: 5%;
+// }
 
 #iconx{
     width: 2vh;

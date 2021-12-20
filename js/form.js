@@ -32,14 +32,17 @@ export const renderForm = () => {
                 
                 .then(response => {
                     if (!response.ok) throw response;
-    
-                    console.log(response.data);
-    
+        
                     return response.json();
                 })
                 .then(json => {
                     document.dispatchEvent(new CustomEvent('newData'));
-                    console.log(json.data);
+                    
+                    document.dispatchEvent(new CustomEvent('message', {
+                        detail: {
+                            message: json.message,
+                        }
+                    }));
                 })
                 .catch(error => {
                     
@@ -110,4 +113,25 @@ export const renderForm = () => {
             sendPostRequest();
         }) 
     }
+
+    document.addEventListener("showElement",( event =>{
+
+        fetch(event.detail.url, { 
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('token'),
+            }
+        }) 
+        .then(response => {
+            if (!response.ok) throw response;
+
+            return response.json();
+        })
+        .then(json => {
+            let data = json.data;
+
+            console.log(data);
+            //traer los datos de name y email. Con bucles, forEach o Object.
+        })
+        .catch(error => console.log(error));
+    }));
 }

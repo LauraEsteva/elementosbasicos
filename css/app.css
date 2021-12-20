@@ -585,7 +585,7 @@ footer {
 
 .crud__form-element label {
   font-size: 2vh;
-  color: white;
+  color: #333333;
 }
 
 .crud__form-input input {
@@ -608,26 +608,6 @@ footer {
   background-color: #dbad09;
   color: red;
   position: relative;
-}
-
-#alert-message {
-  display: none;
-}
-
-#alert-message.active {
-  display: block;
-  background-color: #e6e6e6;
-  color: #1a1a1a;
-  font-family: "Ubuntu", sans-serif;
-  width: 15%;
-  text-align: center;
-  margin-top: 2vh;
-  padding: 1vh;
-  border-radius: 1vh;
-  border: 1px solid black;
-  position: fixed;
-  right: 2vh;
-  bottom: 5%;
 }
 
 #iconx {
@@ -670,6 +650,14 @@ footer {
   border-radius: 0.5vh;
 }
 
+.filter-input {
+  height: auto;
+  border-radius: 0.3rem;
+  border: none;
+  color: #001964;
+  font-family: "Ubuntu", sans-serif;
+}
+
 .crud__table {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5vh;
@@ -686,7 +674,8 @@ footer {
   border: 1px solid #cccccc;
   text-align: left;
   padding: 8px;
-  color: white;
+  color: black;
+  font-family: "Ubuntu Condensed";
 }
 
 tr th {
@@ -780,15 +769,7 @@ tr th {
 ======================*/
 /**
 {outline: 1px red solid;}
-*/
-body {
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  min-height: 100vh;
-}
-
+// */
 /*usando en svg width el % hace que se deforme el boton, por eso usamos em con width*/
 /*acaba header*/
 #main {
@@ -818,27 +799,27 @@ h2, h3, h4, h5, h6, a, p {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Roboto";
+  font-family: "Ubuntu", sans-serif;
 }
 
 h5, h6 {
-  font-family: "Roboto Condensed";
+  font-family: "Ubuntu Condensed";
 }
 
 a, td, button, li {
-  font-family: "Roboto";
+  font-family: "Ubuntu", sans-serif;
   font-size: 1em;
 }
 
-label, input {
-  font-family: "Roboto";
+.login-form label {
+  font-family: "Ubuntu Condensed";
   font-size: 0.85em;
   color: black;
   font-weight: bold;
 }
 
 p {
-  font-family: "Roboto";
+  font-family: "Ubuntu", sans-serif;
   font-size: 0.7em;
   line-height: 1.6;
 }

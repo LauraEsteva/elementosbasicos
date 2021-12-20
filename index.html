@@ -41,15 +41,15 @@
             </div>
 
             <div class="main-element crud">
-                <table-component url="http://141.94.27.118:8080/api/users"></table-component>
-               <!--
-                <div class="crud__table tabla" data-url="http://141.94.27.118:8080/api/users">
-                  
+           
+                <div class="crud__table">
+                    <table-filter-component> </table-filter-component>
+                    <table-component url="http://141.94.27.118:8080/api/users"></table-component> 
                 </div> 
-               --> 
+               
                 <!--empieza formulario-->              
                 <div class="crud__form">
-                    <form id="admin-form" name="admin-form" action="http://141.94.27.118:8080/api/register">
+                    <form id="admin-form" name="admin-form" action="http://141.94.27.118:8080/api/users">
                         <div class="tabs">
                             <div class="tabs-links">
                                 <div class="tabs-link tabs-link-selected" data-tab="1">
@@ -71,11 +71,13 @@
                             </div>
                             <!--acaba lista errores-->
 
-                            <!--empieza alarm-message-->
-                            <div id="alert-message">
+                            <!--empieza alert-message-->
+                            <!-- <div id="alert-message">
                                 <span>Datos guardados correctamente.</span>
-                            </div>
-                            <!--acaba alarm-message-->
+                            </div> -->
+
+                            <alert-message></alert-message>
+                            <!--acaba alert-message-->
 
                             <!--empieza pestaña, tabs 1-->
                             <div class="tabs-item tabs-item-selected" data-tab="1">
